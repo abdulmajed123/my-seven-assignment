@@ -2,17 +2,25 @@ import "./App.css";
 import Container from "./component/BannerContainer";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
+import Card from "./component/Card";
+import { Suspense } from "react";
 
+const fetchData = async () => {
+  const result = await fetch("/data.json");
+  return result.json();
+};
 function App() {
+  const ticketData = fetchData();
   return (
     <>
       <Navbar></Navbar>
       <Container></Container>
 
-      <div className="grid grid-cols-12">
-        <div className="bg-gray-400 border-2 h-[400px] col-span-8"></div>
-        <div className="bg-purple-400 border-2 h-[400px] col-span-4"></div>
-      </div>
+      <Suspense
+        fallback={<span className="loading loading-spinner text-error"></span>}
+      >
+        <Card ticketData={ticketData}></Card>
+      </Suspense>
 
       <Footer></Footer>
     </>
