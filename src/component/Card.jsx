@@ -112,36 +112,48 @@ const Card = ({
         <div>
           <h2 className="text-2xl font-bold text-gray-500">Task Status</h2>
           <div className="mt-5 p-2">
-            {seletedCard.map((data, index) => (
-              <div key={index} className="bg-white p-2 rounded mb-2 shadow">
-                <p className="font-bold">{data.title}</p>
-                <button
-                  onClick={() => {
-                    handleComplateBtnClick(data);
-                  }}
-                  className="bg-[#02a53b] w-full py-2 mt-2 text-white tex-lg rounded-md cursor-pointer"
-                >
-                  Complete
-                </button>
-              </div>
-            ))}
+            {seletedCard.length === 0 ? (
+              <p className=" text-gray-400 font-semibold">
+                Select a ticket to add to Task Status
+              </p>
+            ) : (
+              seletedCard.map((data, index) => (
+                <div key={index} className="bg-white p-2 rounded mb-2 shadow">
+                  <p className="font-bold">{data.title}</p>
+                  <button
+                    onClick={() => {
+                      handleComplateBtnClick(data);
+                    }}
+                    className="bg-[#02a53b] w-full py-2 mt-2 text-white tex-lg rounded-md cursor-pointer"
+                  >
+                    Complete
+                  </button>
+                </div>
+              ))
+            )}
           </div>
         </div>
         <div className="mt-30">
           <h2 className="text-2xl font-bold text-gray-500">Resolved Task</h2>
           <div className="mt-5 p-2">
-            {selecResolveTask.map((data) => (
-              <div className="bg-white p-2 rounded mb-2 shadow">
-                <h2 className="text-lg font-bold">{data.title}</h2>
-                <div className="flex justify-between items-center">
-                  <div className="flex items-center gap-2 text-green-500 font-semibold">
-                    <FaCheckCircle className="text-green-600" />
-                    Completed!
+            {selecResolveTask.length === 0 ? (
+              <p className=" text-gray-400 font-semibold">
+                No resolved tasks yet.
+              </p>
+            ) : (
+              selecResolveTask.map((data) => (
+                <div className="bg-white p-2 rounded mb-2 shadow">
+                  <h2 className="text-lg font-bold">{data.title}</h2>
+                  <div className="flex justify-between items-center">
+                    <div className="flex items-center gap-2 text-green-500 font-semibold">
+                      <FaCheckCircle className="text-green-600" />
+                      Completed!
+                    </div>
+                    <p>click to remove</p>
                   </div>
-                  <p>click to remove</p>
                 </div>
-              </div>
-            ))}
+              ))
+            )}
           </div>
         </div>
       </div>
