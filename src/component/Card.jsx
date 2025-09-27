@@ -11,8 +11,9 @@ const Card = ({
   setResolvedCountCard,
   selecResolveTask,
   setSelecResolveTask,
+  setTicketData,
 }) => {
-  const initialData = use(ticketData);
+  const initialData = ticketData;
   // console.log(initialData);
 
   const handleCardClick = (data) => {
@@ -38,6 +39,7 @@ const Card = ({
     setSeletedCard((prev) => prev.filter((t) => t.id !== data.id));
     setSelecResolveTask((prev) => [...prev, data]);
     setCountCard((count) => (count > 0 ? count - 1 : "0"));
+    setTicketData((prev) => prev.filter((t) => t.id !== data.id));
   };
 
   return (
