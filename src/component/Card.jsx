@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { toast } from "react-toastify";
 import { FaCheckCircle } from "react-icons/fa";
+import { GoArchive } from "react-icons/go";
 
 const Card = ({
   ticketData,
@@ -100,7 +101,11 @@ const Card = ({
                   </div>
                   <div className="flex items-center gap-3">
                     <p className="text-[#627382]">{data.customer}</p>
-                    <p className="text-[#627382]">{data.createdAt}</p>
+                    <p className="text-[#627382] flex items-center gap-1">
+                      {" "}
+                      <GoArchive />
+                      {data.createdAt}
+                    </p>
                   </div>
                 </div>
               </div>
