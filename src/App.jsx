@@ -1,5 +1,4 @@
 import "./App.css";
-import Container from "./component/BannerContainer";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Card from "./component/Card";
@@ -7,7 +6,6 @@ import { Suspense, useEffect, useState } from "react";
 import BannerContainer from "./component/BannerContainer";
 import { ToastContainer } from "react-toastify";
 
-// const ticketData = fetchData();
 function App() {
   const [countCard, setCountCard] = useState(0);
   const [resolvedCountCard, setResolvedCountCard] = useState(0);
