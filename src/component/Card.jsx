@@ -1,6 +1,6 @@
 import React, { use } from "react";
 import { toast } from "react-toastify";
-import { FaBeer, FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 
 const Card = ({
   ticketData,
@@ -36,6 +36,7 @@ const Card = ({
     setResolvedCountCard((count) => count + 1);
     setSeletedCard((prev) => prev.filter((t) => t.id !== data.id));
     setSelecResolveTask((prev) => [...prev, data]);
+    setCountCard((count) => (count > 0 ? count - 1 : "0"));
   };
 
   return (

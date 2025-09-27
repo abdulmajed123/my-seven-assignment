@@ -7,7 +7,7 @@ const BannerContainer = ({ countCard, resolvedCountCard }) => {
       <div
         className="bg-gray-500 h-[200px] flex justify-center items-center flex-col text-white rounded-xl"
         style={{
-          backgroundImage: `url(${vector1})`,
+          backgroundImage: `url(${vector1}),url(${vector1})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
