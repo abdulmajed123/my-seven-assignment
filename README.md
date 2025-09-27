@@ -1,16 +1,26 @@
-# React + Vite
+#### Question 1: What is JSX, and why is it used?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Answer 1:
+JSX :JSX is a syntax extension for JavaScript that allows you to write HTML-like markup directly within a JavaScript file.
+It is primarily used with libraries like React to describe the structure and appearance of user interface components.
 
-Currently, two official plugins are available:
+#### Question 2 :What is the difference between State and Props?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Answer 2:
+Props : props are read-only, immutable data passed from a parent component to a child component.
+State: while state is a mutable, internal data structure managed and updated by the component itself
 
-## React Compiler
+#### Question 3: What is the useState hook, and how does it work?
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Answer 3:
+useState :The useState hook in React is a function that lets functional components manage their own state, which is data that can change over time and trigger UI updates.
 
-## Expanding the ESLint configuration
+It takes an initial state value and returns a two-element array: the current state value and a setter function to update it.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#### Question 4:How can you share state between components in React?
+
+Answer 4:Sharing state between components in React can be achieved through several methods, depending on the relationship between the components and the complexity of the state
+
+#### Question 5: How is event handling done in React?
+
+Answer 5:Event handling in React is performed using a synthetic event system that normalizes browser events for cross-browser compatibility and improved performance.

@@ -5,13 +5,13 @@ const BannerContainer = ({ countCard, resolvedCountCard }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20 p-3">
       <div
-        className="bg-gray-500 h-[300px] flex justify-center items-center flex-col text-white rounded-xl"
-        style={{
-          backgroundImage: `url(${vector1}),url(${vector1})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
+        className="bg-gradient-to-r from-[#632ee3] to-[#9f62f2] h-[300px] flex justify-center items-center flex-col text-white rounded-xl "
+        // style={{
+        //   backgroundImage: `url(${vector1}),url(${vector1})`,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        // }}
       >
         <h4 className="text-2xl font-bold">In-Progress</h4>
         <p className="text-2xl font-bold">{countCard}</p>
