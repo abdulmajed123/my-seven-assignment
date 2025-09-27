@@ -3,7 +3,7 @@ import Container from "./BannerContainer";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm flex justify-between items-center ">
+    <div className="navbar bg-base-100 shadow-sm flex justify-between items-center  ">
       <div className="navbar-start ">
         <div className="dropdown ">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,7 +35,9 @@ const Navbar = () => {
             <a href="">Contact</a>
           </ul>
         </div>
-        <a className=" text-[24px] font-bold">CS — Ticket System</a>
+        <a className="hidden sm:block text-[24px]  font-bold">
+          CS — Ticket System
+        </a>
       </div>
 
       <div className="flex">
@@ -61,7 +63,7 @@ const Navbar = () => {
             </a>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end flex justify-end">
           <a className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white ">
             + New Ticket
           </a>
