@@ -1,3 +1,37 @@
+## Website Name
+
+-- Ticket System
+
+## Website Live URL
+
+-- https://ticket-count.netlify.app/
+
+## 🚀 Features
+
+--Create Tickets – Users can open new tickets for issues, requests, or queries.
+--Cancel / Close Tickets – Users can cancel or close tickets once resolved.
+--Ticket Status Tracking – Open, In Progress, Resolved, or Closed status for each ticket.
+--Responsive UI – Works seamlessly on desktop, tablet, and mobile devices.
+
+## Technologies Used
+
+--**Frontend:** React.js, TailwindCSS,DaisyUI
+--**Hosting:** Netlify
+
+💻 Local Setup / How to Run
+
+1. clone the repository:
+   git clone https://github.com/abdulmajed123/my-seven-assignment.git
+
+2.Navigate to the project directory:
+cd my-seven-assignment
+
+3.Install dependencies:
+npm install
+
+4.Start the development server:
+npm run dev
+
 #### Question 1: What is JSX, and why is it used?
 
 Answer 1:
